@@ -2,12 +2,7 @@ REST API
 ========
 
 .. raw:: html
-
-   <div class="swagger-section">
-     <div id="swagger-ui-container" class="swagger-ui-wrap"></div>
-   </div>
-
-  <div class="swagger-section">
+<div class="swagger-section">
      <div id="swagger-ui-container" class="swagger-ui-wrap"></div>
    </div>
 
@@ -25,10 +20,10 @@ REST API
    <script src="https://cdn.rawgit.com/swagger-api/swagger-ui/v2.1.3/dist/lib/swagger-oauth.js"></script>
 
    <script type="text/javascript">
-      window.swaggerUi = new SwaggerUi({
-        url: '../AUTO_RIA_API/used_cars/info-swagger.yml',
-        dom_id: 'swagger-ui-container'
-      });
- 
-      window.swaggerUi.load();
-    </script>
+     window.swaggerUi = new SwaggerUi({
+       url: '../../_static/admin-api-swagger.yml',
+       dom_id: 'swagger-ui-container'
+     });
+
+     window.swaggerUi.load();
+   </script>
