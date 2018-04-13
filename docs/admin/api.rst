@@ -7,19 +7,37 @@ REST API
      <div id="swagger-ui-container" class="swagger-ui-wrap"></div>
    </div>
 
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:300,600|Titillium+Web:400,600,700" />
-   <script src="https://cdn.rawgit.com/swagger-api/swagger-ui/v2.1.3/dist/lib/jquery-1.8.0.min.js"></script>
-   <script src="https://cdn.rawgit.com/swagger-api/swagger-ui/v2.1.3/dist/lib/jquery.slideto.min.js"></script>
-   <script src="https://cdn.rawgit.com/swagger-api/swagger-ui/v2.1.3/dist/lib/jquery.wiggle.min.js"></script>
-   <script src="https://cdn.rawgit.com/swagger-api/swagger-ui/v2.1.3/dist/lib/jquery.ba-bbq.min.js"></script>
-   <script src="https://cdn.rawgit.com/swagger-api/swagger-ui/v2.1.3/dist/lib/handlebars-2.0.0.js"></script>
-   <script src="https://cdn.rawgit.com/swagger-api/swagger-ui/v2.1.3/dist/lib/underscore-min.js"></script>
-   <script src="https://cdn.rawgit.com/swagger-api/swagger-ui/v2.1.3/dist/lib/backbone-min.js"></script>
-   <script src="https://cdn.rawgit.com/swagger-api/swagger-ui/v2.1.3/dist/swagger-ui.min.js"></script>
-   <script src="https://cdn.rawgit.com/swagger-api/swagger-ui/v2.1.3/dist/lib/highlight.7.3.pack.js"></script>
-   <script src="https://cdn.rawgit.com/swagger-api/swagger-ui/v2.1.3/dist/lib/marked.js"></script>
-   <script src="https://cdn.rawgit.com/swagger-api/swagger-ui/v2.1.3/dist/lib/swagger-oauth.js"></script>
+    <link href="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css" rel="stylesheet" />
+   <script src="https://cdn.rawgit.com/jquery/jquery/2.1.4/dist/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/Automattic/expect.js/0.3.1/index.js"></script>
+  <script src="http://sinonjs.org/releases/sinon-1.17.3.js"></script>
+  <script src="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.js"></script>
+  <script>
+    mocha.setup({
+      ui: 'bdd',
+      timeout: 10000
+    });
+  </script>
 
+  <script src="../node_modules/superagent/superagent.js"></script>
+
+  <script src="../src/ApiClient.js"></script>
+
+  <script src="../src/model/Category.js"></script>
+  <script src="../src/model/Tag.js"></script>
+  <script src="../src/model/Pet.js"></script>
+  <script src="../src/model/User.js"></script>
+
+  <script src="../src/api/PetApi.js"></script>
+
+  <script src="ApiClientTest.js"></script>
+  <script src="api/PetApiTest.js"></script>
+
+  <script>
+    mocha.checkLeaks();
+    mocha.globals(['jQuery']);
+    mocha.run();
+  </script>
    <script type="text/javascript">
      window.swaggerUi = new SwaggerUi({
        url: '../../_static/admin-api-swagger.yml',
