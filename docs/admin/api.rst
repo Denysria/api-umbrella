@@ -2,7 +2,7 @@ REST API
 ========
 
 .. raw:: html
-   <div class="swagger-section">
+       <div class="swagger-section">
      <div id="swagger-ui-container" class="swagger-ui-wrap"></div>
    </div>
 
