@@ -7,7 +7,7 @@ REST API
      <div id="swagger-ui-container" class="swagger-ui-wrap"></div>
    </div>
 
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/2.1.3/css/screen.min.css" />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:300,600|Titillium+Web:400,600,700" />
    <script src="https://cdn.rawgit.com/swagger-api/swagger-ui/v2.1.3/dist/lib/jquery-1.8.0.min.js"></script>
    <script src="https://cdn.rawgit.com/swagger-api/swagger-ui/v2.1.3/dist/lib/jquery.slideto.min.js"></script>
    <script src="https://cdn.rawgit.com/swagger-api/swagger-ui/v2.1.3/dist/lib/jquery.wiggle.min.js"></script>
